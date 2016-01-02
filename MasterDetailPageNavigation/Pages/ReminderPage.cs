@@ -1,10 +1,10 @@
 ﻿using Xamarin.Forms;
 
-namespace MasterDetailPageNavigation
+namespace MasterDetailPageNavigation.Pages
 {
-	public class ReminderPageCS : ContentPage
+	public class ReminderPage : ContentPage
 	{
-		public ReminderPageCS ()
+		public ReminderPage ()
 		{
 			Title = "Reminder Page";
 			Content = new StackLayout { 

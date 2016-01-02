@@ -1,31 +1,31 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace MasterDetailPageNavigation
+namespace MasterDetailPageNavigation.Pages
 {
-	public class MasterPageCS : ContentPage
+	public class MasterPage : ContentPage
 	{
 		public ListView ListView { get { return listView; } }
 
 		ListView listView;
 
-		public MasterPageCS ()
+		public MasterPage ()
 		{
 			var masterPageItems = new List<MasterPageItem> ();
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Contacts",
 				IconSource = "contacts.png",
-				TargetType = typeof(ContactsPageCS)
+				TargetType = typeof(ContactsPage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "TodoList",
 				IconSource = "todo.png",
-				TargetType = typeof(TodoListPageCS)
+				TargetType = typeof(TodoListPage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Reminders",
 				IconSource = "reminders.png",
-				TargetType = typeof(ReminderPageCS)
+				TargetType = typeof(ReminderPage)
 			});
 
 			listView = new ListView {

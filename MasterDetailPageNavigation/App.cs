@@ -6,7 +6,7 @@ namespace MasterDetailPageNavigation
 	{
 		public override void Initialize()
 		{
-			RegisterAppStart<ViewModels.MainPageViewModel>();
+			RegisterAppStart<ViewModels.MainViewModel>();
 		}
 	}
 }

@@ -1,17 +1,17 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace MasterDetailPageNavigation
+namespace MasterDetailPageNavigation.Pages
 {
-	public class MainPageCS : MasterDetailPage
+	public class MainPage : MasterDetailPage
 	{
-		MasterPageCS masterPage;
+		MasterPage masterPage;
 
-		public MainPageCS ()
+		public MainPage ()
 		{
-			masterPage = new MasterPageCS ();
+			masterPage = new MasterPage ();
 			Master = masterPage;
-			Detail = new NavigationPage (new ContactsPageCS ());
+			Detail = new NavigationPage (new ContactsPage ());
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 

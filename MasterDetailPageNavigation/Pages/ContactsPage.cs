@@ -1,10 +1,10 @@
 ﻿using Xamarin.Forms;
 
-namespace MasterDetailPageNavigation
+namespace MasterDetailPageNavigation.Pages
 {
-	public class ContactsPageCS : ContentPage
+	public class ContactsPage : ContentPage
 	{
-		public ContactsPageCS ()
+		public ContactsPage ()
 		{
 			Title = "Contacts Page";
 			Content = new StackLayout { 

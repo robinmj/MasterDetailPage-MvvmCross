@@ -1,10 +1,10 @@
 ﻿using Xamarin.Forms;
 
-namespace MasterDetailPageNavigation
+namespace MasterDetailPageNavigation.Pages
 {
-	public class TodoListPageCS : ContentPage
+	public class TodoListPage : ContentPage
 	{
-		public TodoListPageCS ()
+		public TodoListPage ()
 		{
 			Title = "TodoList Page";
 			Content = new StackLayout { 
