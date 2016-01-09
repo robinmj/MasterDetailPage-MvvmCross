@@ -17,7 +17,7 @@ using Cirrious.CrossCore;
 
 namespace MasterDetailPageNavigation.Droid
 {
-	[Activity (Label = "MasterDetailPageNavigation.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "MasterDetailPageNavigation.Droid", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : FormsApplicationActivity
 	{
 		protected override void OnCreate(Bundle bundle)
