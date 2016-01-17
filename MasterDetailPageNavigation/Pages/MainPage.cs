@@ -11,7 +11,7 @@ namespace MasterDetailPageNavigation.Pages
 		{
 			masterPage = new MasterPage ();
 			Master = masterPage;
-			Detail = new NavigationPage (new ContactsPage ());
+			Detail = new ContactsPage ();
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 
@@ -24,7 +24,7 @@ namespace MasterDetailPageNavigation.Pages
 		{
 			var item = e.SelectedItem as MasterPageItem;
 			if (item != null) {
-				Detail = new NavigationPage ((Page)Activator.CreateInstance (item.TargetType));
+				Detail = (Page)Activator.CreateInstance (item.TargetType);
 				masterPage.ListView.SelectedItem = null;
 				IsPresented = false;
 			}
