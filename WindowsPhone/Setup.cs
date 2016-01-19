@@ -1,10 +1,10 @@
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
 using MvvmCross.Forms.Presenter.Core;
-using MvvmCross.Forms.Presenter.Windows81;
+using MvvmCross.Forms.Presenter.WindowsPhone;
 using Cirrious.MvvmCross.Views;
-using Cirrious.MvvmCross.WindowsCommon.Platform;
-using Cirrious.MvvmCross.WindowsCommon.Views;
+using Cirrious.MvvmCross.WindowsPhone.Platform;
+using Cirrious.MvvmCross.WindowsPhone.Views;
 using Microsoft.Phone.Controls;
 using Xamarin.Forms;
 
@@ -18,7 +18,7 @@ namespace MasterDetailPageNavigation.WindowsPhone
 
         protected override Cirrious.MvvmCross.ViewModels.IMvxApplication CreateApp()
         {
-            return new Example.App();
+            return new MasterDetailPageNavigation.App();
         }
 
         protected override IMvxTrace CreateDebugTrace()
