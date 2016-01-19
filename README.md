@@ -1,11 +1,12 @@
-MasterDetailPage
-================
+MasterDetailPage - MvvmCross-Forms
+==================================
 
-This sample demonstrates how to use a `MasterDetailPage` and navigate between its pages of information.
+In order to work through some issues I encountered while adding MasterDetailPage to an existing app, I have adapted the
+ [MasterDetailPage](https://github.com/xamarin/xamarin-forms-samples/tree/master/Navigation/MasterDetailPage)
+ Xamarin.Forms example to be an MvvmCross-Forms project.
+ 
+### Notes
 
-For more information about the sample see [Master-Detail Page](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/user-interface/navigation/master-detail-page/).
-
-Author
-------
-
-David Britch
+* I haven't adapted the iOS project (yet)
+* I encountered difficulties getting MvvmCross-Forms to build under the wpa81 target, so the Windows Phone project is targeted to wp81.
+* Due to differences in the original example and the [MvvmCross-Forms sample](https://github.com/MvvmCross/MvvmCross-Forms/tree/ac3f1e77822b562ec9650f7974b6f2235d18dfc1/Samples/Example001CSharp) I used as a reference, the UI in Windows Phone still doesn't look like the original example.
