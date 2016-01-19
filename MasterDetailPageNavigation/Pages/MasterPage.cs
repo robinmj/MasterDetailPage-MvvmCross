@@ -41,7 +41,8 @@ namespace MasterDetailPageNavigation.Pages
 			};
 
 			Padding = new Thickness (0, 40, 0, 0);
-			Icon = "hamburger.png";
+			Icon = (Device.OS == TargetPlatform.Windows) ? "swap.png" : "hamburger.png";
+
 			Title = "Personal Organiser";
 			Content = new StackLayout {
 				VerticalOptions = LayoutOptions.FillAndExpand,
