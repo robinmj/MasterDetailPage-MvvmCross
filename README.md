@@ -1,5 +1,5 @@
-MasterDetailPage - MvvmCross-Forms
-==================================
+MasterDetailPage with MvvmCross-Forms
+=====================================
 
 In order to work through some issues I encountered while adding MasterDetailPage to an existing app, I have adapted the
  [MasterDetailPage](https://github.com/xamarin/xamarin-forms-samples/tree/master/Navigation/MasterDetailPage)
